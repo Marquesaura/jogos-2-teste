@@ -1,0 +1,29 @@
+body {
+    background: #fff3e0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#status {
+    margin: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+input[type=number] {
+    padding: 8px;
+    font-size: 1em;
+    width: 180px;
+    margin: 10px;
+}
+button {
+    padding: 8px 16px;
+    font-size: 1em;
+    margin: 10px;
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background: #f57c00;
+}

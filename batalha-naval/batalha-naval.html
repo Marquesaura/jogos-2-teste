@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha Naval Online</title>
+    <link rel="stylesheet" href="batalha-naval.css">
+</head>
+<body>
+    <h1>Batalha Naval</h1>
+    <div style="margin: 10px;">
+        <input id="codigoSala" placeholder="Código da sala" maxlength="8" style="width:120px; text-align:center;" />
+        <button onclick="conectarSala()">Conectar</button>
+        <span id="conexaoStatus" style="margin-left:10px;color:#2196f3;"></span>
+    </div>
+    <div id="status"></div>
+    <div style="display:flex;justify-content:center;gap:40px;">
+        <div>
+            <h3>Seu Tabuleiro</h3>
+            <div id="tabuleiro-jogador"></div>
+        </div>
+        <div>
+            <h3>Tabuleiro do Adversário</h3>
+            <div id="tabuleiro-adversario"></div>
+        </div>
+    </div>
+    <button onclick="reiniciarJogo()">Reiniciar</button>
+    <script src="batalha-naval.js"></script>
+</body>
+</html>

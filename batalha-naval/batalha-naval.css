@@ -1,0 +1,37 @@
+body {
+    background: #e3f2fd;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#tabuleiro-jogador, #tabuleiro-adversario {
+    display: grid;
+    grid-template-columns: repeat(10, 32px);
+    grid-template-rows: repeat(10, 32px);
+    gap: 2px;
+    margin: 10px auto;
+}
+.celula {
+    width: 32px;
+    height: 32px;
+    background: #90caf9;
+    border: 1px solid #1976d2;
+    cursor: pointer;
+    user-select: none;
+}
+.celula.navio {
+    background: #78909c;
+}
+.celula.tiro {
+    background: #e57373;
+}
+.celula.agua {
+    background: #b3e5fc;
+}
+.celula.acerto {
+    background: #388e3c;
+}
+#status {
+    margin: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+}

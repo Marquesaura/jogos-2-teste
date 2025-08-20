@@ -1,0 +1,40 @@
+body {
+    background: #f5ecd7;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#tabuleiro {
+    display: inline-block;
+    border: 4px solid #6d4c2b;
+    margin: 30px auto;
+    box-shadow: 0 0 20px #bfa77a;
+}
+.casa {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 2.2em;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.casa.clara {
+    background: #f0d9b5;
+}
+.casa.escura {
+    background: #b58863;
+}
+.casa.selecionada {
+    outline: 3px solid #2196f3;
+    z-index: 2;
+}
+.casa.movimento {
+    background: #aee571 !important;
+}
+#status {
+    margin: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+}

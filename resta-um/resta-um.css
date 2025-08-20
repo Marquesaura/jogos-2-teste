@@ -1,0 +1,30 @@
+body {
+    background: #f7f7f7;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#tabuleiro {
+    display: inline-block;
+    margin: 30px auto;
+}
+.celula {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #aaa;
+    display: inline-block;
+    margin: 2px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.celula.vazia {
+    background: #fff;
+    border: 1px dashed #bbb;
+}
+.celula.selecionada {
+    background: #4caf50;
+}
+.celula.possivel {
+    background: #ffeb3b;
+}

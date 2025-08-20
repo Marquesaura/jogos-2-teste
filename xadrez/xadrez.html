@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xadrez</title>
+    <link rel="stylesheet" href="xadrez.css">
+</head>
+<body>
+    <h1>Xadrez</h1>
+    <div id="status"></div>
+    <div id="tabuleiro"></div>
+    <div style="margin: 10px;">
+        <input id="codigoSala" placeholder="Código da sala" maxlength="8" style="width:120px; text-align:center;" />
+        <button onclick="conectarSala()">Conectar</button>
+        <span id="conexaoStatus" style="margin-left:10px;color:#2196f3;"></span>
+    </div>
+    <button onclick="reiniciarJogo()">Reiniciar</button>
+    <script src="xadrez.js"></script>
+</body>
+</html>

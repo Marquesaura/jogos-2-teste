@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forca.css">
+    <title>Forca - Ping!</title>
+</head>
+
+<body>
+    <h2>Bem-vindo ao jogo de Forca</h2>
+
+    <label for="dificuldade">
+        <select name="sel-dificuldade" id="dificuldade">
+            <option value="facil">Fácil</option>
+            <option value="medio">Médio</option>
+            <option value="dificil">Difícil</option>
+        </select>
+        <button onclick="adivinharPalavras()">Sortear Palavra</button>
+    </label>
+    <div id="resultado"></div>
+
+    <div class="container-alafabeto">
+
+    </div>
+    <main>
+        <article class="img">
+            <img class="img-forca" src="imagens/1.png" alt="forca vazia">
+            <img class="img-forca" src="imagens/2.png" alt="forca com cabeça">
+            <img class="img-forca" src="imagens/3.png" alt="forca com cabeça e tronco">
+            <img class="img-forca" src="imagens/4.png" alt="forca com cabeça, tronco e braço">
+            <img class="img-forca" src="imagens/5.png" alt="forca com cabeça, tronco e dois braços">
+            <img class="img-forca" src="imagens/6.png" alt="forca com cabeça, tronco e dois braços e uma perna">
+            <img class="img-forca" src="imagens/7.png" alt="forca com pessoa morta">
+        </article>
+        <article class="content">
+            <div class="adivinhar"></div>
+            <div class="dica"></div>
+            <div class="btns"></div>
+        </article>
+    </main>
+    <script src="forca.js"></script>
+</body>
+
+</html>
